@@ -1,58 +1,128 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
 
-<title>Revenovich Test!</title>
-<link href ="style.css" rel ="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src = "main.js"></script>
-
-</head>
-
-
-<body>
-    <h1> Just take some quizz to unlock my treasure </h1>
-
-    <div class="container">
-    
-        <form id = "quiz" name = "quiz">
-
-            <p class = "questions">Full name of me? (Vietnamese, eg. Nguyen Van A)</p>
-            <input id = "textbox" type = "text" autocomplete="off" name = "question4">
-
-            <p class = "questions">Where I was born?</p>
+        <title>Revenovich Test!</title>
+        <link href ="style.css" rel ="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://kit.fontawesome.com/e13cff7ccb.js" crossorigin="anonymous"></script>
             
-            <input type = "radio" id = "mc" name = "question2" value = "HaLam"> Ha Lam<br>
-            <input type = "radio" id = "mc" name = "question2" value = "TamKi"> Tam Ki<br>
-            <input type = "radio" id = "mc" name = "question2" value = "DaNang"> Da Nang<br>
-            <input type = "radio" id = "mc" name = "question2" value = "Hue"> Hue<br>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script src = "index.js"></script>
 
-            <p class = "questions">Name of my father and mother?</p>
+    </head>
 
-            <input type = "radio" id = "mc" name = "question3" value = "BinhTrang"> Bình_Trang<br>
-            <input type = "radio" id = "mc" name = "question3" value = "BinhTuong"> Bình_Tưởng<br>
-            <input type = "radio" id = "mc" name = "question3" value = "BinhNam"> Bình_Năm<br>
 
-            <p class = "questions">Full name of my Love? (Vietnamese, eg. Nguyen Van A)</p>
-            <input id = "textbox" type = "text" autocomplete="off" name = "question1">
+    <body onload="collapsibleonload()">
 
-            <input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
-            <p> If you want to retake press button below</p>
-            <button onClick="history.go(0);">Refresh Page</button>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/index.html" id="navbar__logo">
+                    Revenovich</a>
+                <ul class="navbar__menu">
+                    <li class="navbar__btn">
+                        <a href="/quizzpage.html" class="button">
+                        Treasure
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        </form>
-    </div>
+        <!-- Main Section -->
 
-    <div id="id01" class="w3-modal">
-        <div class="w3-modal-content">
-            <div class="w3-container">
-                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                <p id = "message"></p>
-                <img id = "picture">
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>Hi, welcome to my ehrrr... personal site?</h1>
+                    <h2>Name is Tran Gia (Revenovich) Khoa</h2>
+                    <p>I like develop games and learn about physchology.</p>
+                    <p>This website is developed by me but website development is for fun.</p>
+                    <p>Here is where I store all my personal public stuff, please welcome to explored!!!</p>
+                    <!-- <button class="main__btn"><a href="/">Get Started</a></button>// -->
+                </div>
+                <div class="main__img--container">
+                    <img src="img/editava.jpg" alt="pic" id="main__img">
+                </div>
             </div>
         </div>
-    </div>
+
+        <!-- Project Section -->
+        <div class="button__collapse__project">
+            <button type="button" class="collapsible" onclick="collapsible()"><i id = "arrowproject" class="fas fa-chevron-right"></i>My project</button>
+        </div>
+        <div id = "collapsile__content" class="services">
+            <div class="services__container">
+                <div class="services__card">
+                    <h2>This website, lol</h2>
+                    <p>What do you think? This website is surely a project and it won't be complete project.</p>
+                    <!-- <button onclick="location.href='https://www.minecraft.net/en-us/'">Get Started</button> -->
+                </div>
+                <div class="services__card">
+                    <h2>Final year project</h2>
+                    <p>The project for my gradute. It's about VR game development.</p>
+                    <!-- <button onclick="location.href='https://www.minecraft.net/en-us/'">Get Started</button>// -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Section -->
+        <div class="button__collapse__game">
+            <button type="button" class="collapsible__game" onclick="collapsiblegame()"><i id = "arrowgame" class="fas fa-chevron-right"></i>My favorite game</button>
+        </div>
+        <div id = "collapsile__content__game" class="games">
+            <div class="games__container">
+                <div class="games__card">
+                    <h2>Minecraft</h2>
+                    <p>Yeah, Minecraft is the most favorite game for me. It so simple but have a lot of ways to make it fun</p>
+                    <button onclick="location.href='https://www.minecraft.net/en-us/'">Get Started</button>
+                </div>
+                <div class="games__card">
+                    <h2>Arma 3</h2>
+                    <p>Arma 3 is a best simulation game.</p>
+                    <button onclick="location.href='https://arma3.com/'">Get Started</button>
+                </div>
+                <div class="games__card">
+                    <h2>War Thunder</h2>
+                    <p>War thunder is best MMO combat simulation game. But I suck sometimes.</p>
+                    <button onclick="location.href='https://warthunder.com/'">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Section -->
+        <div class="footer__container">
+            <div class="social__media">
+                <div class="social__media--warp">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">Revenovich</a>
+                    </div>
+                    <p class="website__rights">Revenovich 2021 - My death. All rights reserved.</p>
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com/Revenovich17" class="social__icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/k._.revenovich.p/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khoa-tran-gia-542737173/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.youtube.com/channel/UCSW5TU7AuhtmqiwIyl2cMPA" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </body>
 

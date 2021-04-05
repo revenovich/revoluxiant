@@ -1,5 +1,10 @@
 var i = 0;
 
+function onloadFunction() {
+	document.getElementById("loader").style.visibility = 'hidden';
+	document.getElementById("loader").style.display = 'none';
+}
+
 function check(){
 
 	test();
@@ -38,12 +43,27 @@ function check(){
 }
 
 function test(){
-	var seconds = 10;
+	var seconds = 25;
 	document.getElementById("button").style.visibility = 'hidden';
+	document.getElementById("button").style.display = 'none';
+	document.getElementById("retake").style.visibility = 'hidden';
 	var countdown = setInterval(function() {
 		seconds--;
 		document.getElementById("button").style.visibility = 'hidden';
-		if (seconds <= 0) {clearInterval(countdown); document.getElementById("button").style.visibility = 'visible';};
+		document.getElementById("button").style.display = 'none';
+		document.getElementById("loader").style.visibility = 'visible';
+		document.getElementById("loader").style.display = 'block';
+		document.getElementById("retake").style.visibility = 'hidden';
+		document.getElementById("p001").innerHTML = seconds + " delay on purpose.";
+		if (seconds <= 0) {
+			clearInterval(countdown); 
+			document.getElementById("button").style.visibility = 'visible';
+			document.getElementById("button").style.display = 'block';
+			document.getElementById("loader").style.visibility = 'hidden';
+			document.getElementById("loader").style.display = 'none';
+			document.getElementById("retake").style.visibility = 'visible';
+			document.getElementById("p001").innerHTML = "";
+		};
 	}, 1000);
 }
 
