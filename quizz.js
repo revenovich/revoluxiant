@@ -1,6 +1,6 @@
 var i = 0;
 
-function onloadFunction() {
+function onloadfunction() {
 	document.getElementById("loader").style.visibility = 'hidden';
 	document.getElementById("loader").style.display = 'none';
 }
