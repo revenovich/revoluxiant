@@ -120,6 +120,17 @@
     background-color: #141414;
 }
 
+.w3-container, .w3-panel {
+    padding: 1em 1em !important;
+    background-color: #141414;
+}
+
+.w3-container p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
 .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -224,7 +235,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: transparent;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -243,8 +254,8 @@
 
 #main__img {
 	border-radius: 20%;
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
 }
 
 /* Mobile Responsive */
