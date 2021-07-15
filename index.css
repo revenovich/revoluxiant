@@ -173,7 +173,7 @@
 }
 
 .joke__container h2 {
-    text-align: center;
+    margin-left: 8em;
     margin-top: 0.5em;
     font-size: 2rem;
     font-weight: 700;
@@ -182,7 +182,7 @@
 
 .joke__question a {
     float: left;
-    margin: 30px 1em;
+    margin: 30px 6em;
     font-size: 1rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
@@ -190,7 +190,7 @@
 
 .joke__answer a {
     float: left;
-    margin: 30px 5em;
+    margin: 30px 5em 0 3em;
     font-size: 1rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
