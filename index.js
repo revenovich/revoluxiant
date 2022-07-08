@@ -48,7 +48,7 @@ function collapsibleonload() {
 	}
     };
 	
-    fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=nsfw', options).then(
+    fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=racist', options).then(
     resp => resp.json())
         .then(repos => {
             
