@@ -57,15 +57,15 @@ function collapsibleonload() {
     resp => resp.json())
         .then(repos => {
             
-            strq = strq.concat("Question ")
+            strq = strq.concat("Question ");
 
-            strq = strq.concat(repos.type)
+            strq = strq.concat(repos.type);
 
-            strq = strq.concat(" id ")
+            strq = strq.concat(" id ");
 
-            strq = strq.concat(repos.id)
+            strq = strq.concat(repos.id);
 
-            strq = strq.concat(": ")
+            strq = strq.concat(": ");
 
             document.getElementById('jokehead').innerHTML = "Some random joke for fun!"
             document.getElementById('jokeq').innerHTML = strq.concat(repos.setup);
@@ -73,7 +73,7 @@ function collapsibleonload() {
         
         }).catch(ex => {
         console.error(ex);
-    })
+    });
 
     var nowtoday = new Date();
     var tyear = nowtoday.getFullYear()
