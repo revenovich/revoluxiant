@@ -47,6 +47,11 @@ function collapsibleonload() {
 		'X-RapidAPI-Host': 'jokeapi-v2.p.rapidapi.com'
 	}
     };
+
+    fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=racist', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 	
     fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=racist', options).then(
     resp => resp.json())
