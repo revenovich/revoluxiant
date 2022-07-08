@@ -40,7 +40,15 @@ function collapsibleonload() {
     let strq = "";
     let stra = "Answer: ";
 
-    fetch('https://official-joke-api.appspot.com/jokes/random').then(
+    const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '4b3cbe5cf9msh28f4bc42ce57422p1a40c1jsn00cb0687ab17',
+		'X-RapidAPI-Host': 'jokeapi-v2.p.rapidapi.com'
+	}
+    };
+	
+    fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=nsfw', options).then(
     resp => resp.json())
         .then(repos => {
             
