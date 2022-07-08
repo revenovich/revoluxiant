@@ -40,41 +40,6 @@ function collapsibleonload() {
     let strq = "";
     let stra = "Answer: ";
 
-    const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '4b3cbe5cf9msh28f4bc42ce57422p1a40c1jsn00cb0687ab17',
-		'X-RapidAPI-Host': 'jokeapi-v2.p.rapidapi.com'
-	}
-    };
-
-    fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=racist', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-	
-    fetch('https://jokeapi-v2.p.rapidapi.com/joke/Any?format=json&contains=C%2523&idRange=0-150&blacklistFlags=racist', options).then(
-    resp => resp.json())
-        .then(repos => {
-            
-            strq = strq.concat("Question ");
-
-            strq = strq.concat(repos.type);
-
-            strq = strq.concat(" id ");
-
-            strq = strq.concat(repos.id);
-
-            strq = strq.concat(": ");
-
-            document.getElementById('jokehead').innerHTML = "Some random joke for fun!"
-            document.getElementById('jokeq').innerHTML = strq.concat(repos.setup);
-            document.getElementById('jokea').innerHTML = stra.concat(repos.punchline);
-        
-        }).catch(ex => {
-        console.error(ex);
-    });
-
     var nowtoday = new Date();
     var tyear = nowtoday.getFullYear()
     var tmonth = nowtoday.getMonth() + 1
