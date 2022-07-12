@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>revoluxianT</title>
+        <link href ="index_v2.css" rel ="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://kit.fontawesome.com/e13cff7ccb.js" crossorigin="anonymous"></script>
+            
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src = "index_v4.js"></script>
+    </head>
+
+
+    <body onload="mainonload()">
+
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/index.html" id="navbar__logo">
+                    revoluxianT</a>
+                <ul class="navbar__menu">
+                    <li class="navbar__btn">
+                        <a href="/chatbot.html" class="button">
+                        Chat with me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Section -->
+
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>Hi, welcome to my ehrrr... personal site?</h1>
+                    <h2>Tran Gia (Revenovich) Khoa is my name</h2>
+                    <button onclick = "info();" class="main__btn"><a>Info about me</a></button>
+                </div>
+                <div class="main__img--container">
+                    <img src="img/editava.jpg" alt="pic" id="main__img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Section -->
+        <div class="project">
+            <div class="button__collapse__project">
+                <button type="button" class="collapsible" onclick="collapsible()"><i id = "arrowproject" class="fas fa-chevron-right"></i>My projects</button>
+            </div>
+            <div id = "collapsile__content" class="services">
+                <div id = "services__container__card" class="services__container">
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Section -->
+        <div class="game">
+            <div class="button__collapse__game">
+                <button type="button" class="collapsible__game" onclick="collapsiblegame()"><i id = "arrowgame" class="fas fa-chevron-right"></i>My favorite games</button>
+            </div>
+            <div id = "collapsile__content__game" class="games">
+                <div id = "games__container__card" class="games__container">
+                </div>
+            </div>
+        </div>
+
+        <div class="to-archive-main">
+            <div class="footer__container">
+                <div class="to-archive">
+                    <div class="to-archive-warp">
+                        <p><a href="https://revoluxiant-archive.herokuapp.com/"> &lt;Go To&gt; revoluxianT<span>Archive</span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__container">
+            <!-- Footer Section -->
+            <!--
+            <div class="joke__container">
+                <div class="joke__header">
+                    <h2 id="jokehead"></h2>
+                </div>
+                <div class="joke__question">
+                    <a id='jokeq'></a>
+                </div>
+                <div class="joke__answer">
+                    <a id='jokea'></a>
+                </div>
+            </div>
+            -->
+            
+            <div class="social__media">
+                <div class="social__media--warp">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">revoluxianT</a>
+                    </div>
+                    <p class="website__rights">Revenovich 2021 - My death. All rights reserved.</p>
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com/Revenovich17" class="social__icon--link" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/k._.revenovich.p/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/Revenovich17" class="social__icon--link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khoa-tran-gia-542737173/" class="social__icon--link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.youtube.com/channel/UCSW5TU7AuhtmqiwIyl2cMPA" class="social__icon--link" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                        </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+                <div class="w3-container">
+                    <div class="infomation">
+                        <p>I enjoy design and develop games.</p>
+                        <br>
+                        <p>Learning about psychology is one of my favorite things to do in my free time.</p>
+                        <p>Outdoor activities are quite fun but I'm not into it.</p>
+                        <p>Volunteering is an activity I like but don't have time and money for.</p>
+                        <p>Enthusiasts on internet inspire me a lot.</p>
+                        <br>
+                        <p>Personally, website development is just for fun.</p>
+                        <p>Here is where I store all my personal public stuff, please welcome to explored.</p>
+                        <p>Unlike other introverts, I like to share my stuff.</p>
+                        <p>Owned this website help me do that.</p>
+                        <p>Normally, I think a lot about everything.</p>
+                        <p>Getting someone who can understand and share is my dream.</p>
+                        <br>
+                        <p id = "liveday"></p>
+                        <p id = "plday"></p>
+                        <p id = "editday"></p>
+                        <p id = "testa"></p>
+                        <a href="/quizzpage.html" class="button">Treasure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

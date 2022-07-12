@@ -1,0 +1,6 @@
+[
+    ["url(img/webproject.png)", "This website, lol", "What do you think? This website is surely a project and it won't be complete project.", "location.href='https://github.com/revenovich/revoluxiant'", "Source code"],
+    ["url(img/fyp.png)", "Final year project", "The project for my gradute. It's about VR game development.", "location.href='https://drive.google.com/drive/u/0/folders/1uGHGqFIkJ8u2d6Zo_XbJL2zftI8Vu5vg'", "Assets and Download"],
+    ["url(img/botcode.png)", "Automation Instagram Bot", "The project is about creating a bot for my use. It functions include auto delete my on post with time set, auto download followed user stories, etc.", "location.href='https://github.com/revenovich/instagram_auto_bot'", "Source code"],
+    ["url(img/examplebio.png)","Auto Instagram Bio Update","Just a super small project I create in 3 hours about CRON script to update my bio on Instagram.","location.href='https://github.com/revenovich/rev_auto_bio'","Source code"]
+]

@@ -1,0 +1,5 @@
+[
+    ["url(img/minecraft-cover.jpg)", "Minecraft", "Yeah, Minecraft is the most favorite game for me. It so simple but have a lot of ways to make it fun", "location.href='https://www.minecraft.net/en-us/'", "Get Started"],
+    ["url(img/Arma-3-cover.jpg)", "Arma 3", "Arma 3 is a best simulation game.", "location.href='https://arma3.com/'", "Get Started"],
+    ["url(img/War_Thunder.jpg)", "War Thunder", "War thunder is best MMO combat simulation game. But it suck sometimes.", "location.href='https://warthunder.com/'", "Get Started"]
+]
